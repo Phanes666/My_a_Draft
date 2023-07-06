@@ -801,16 +801,16 @@
 
 // ЗАДАЧА: ГРАВІРУВАННЯ ПРИКРАС
 
-// Сервісу гравірування прикрас потрібна функція, 
-// яка б автоматично рахувала ціну гравірування, 
+// Сервісу гравірування прикрас потрібна функція,
+// яка б автоматично рахувала ціну гравірування,
 // залежно від кількості слів і ціни за слово.
 
-// Оголошена функція calculateEngravingPrice(message, pricePerWord). 
-// Ця функція приймає рядок, що складається зі слів, 
-// розділених лише пробілами (параметр message) та ціну гравірування 
+// Оголошена функція calculateEngravingPrice(message, pricePerWord).
+// Ця функція приймає рядок, що складається зі слів,
+// розділених лише пробілами (параметр message) та ціну гравірування
 // одного слова (параметр pricePerWord).
 
-// Напиши тіло функції, щоб вона повертала загальну вартість 
+// Напиши тіло функції, щоб вона повертала загальну вартість
 // гравірування усіх слів в рядку.
 
 // Оголошена функція calculateEngravingPrice(message, pricePerWord)
@@ -818,7 +818,7 @@
 // Виклик calculateEngravingPrice("JavaScript is in my blood", 10)
 //  повертає 50
 
-// Виклик calculateEngravingPrice("JavaScript is in my blood", 20) 
+// Виклик calculateEngravingPrice("JavaScript is in my blood", 20)
 // повертає 100
 
 // Виклик calculateEngravingPrice("Web-development is creative work", 40)
@@ -828,11 +828,9 @@
 //  повертає 80
 // ___________________________________________________________________
 
-
 // function calculateEngravingPrice(message, pricePerWord) {
 //   // Change code below this line
 // return message.split(" ").length * pricePerWord;
-
 
 //   // Change code above this line
 // }
@@ -843,9 +841,9 @@
 // console.log(calculateEngravingPrice("Web-development is creative work", 20));
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// Метод масивів join(delimiter) дозволяє з'єднати елементи масиву 
-// в рядок. У рядку елементи будуть розділені символом або 
-// групою символів, зазначених у delimiter. Тобто це зворотна 
+// Метод масивів join(delimiter) дозволяє з'єднати елементи масиву
+// в рядок. У рядку елементи будуть розділені символом або
+// групою символів, зазначених у delimiter. Тобто це зворотна
 // операція методу рядків split(delimiter).
 
 // const words = ["JavaScript", "is", "amazing"];
@@ -853,19 +851,19 @@
 // console.log(words.join(" ")); // 'JavaScript is amazing'
 // console.log(words.join("*")); // 'JavaScript*is*amazing'
 // _____________________________________________________________________
-// Доповни код функції makeStringFromArray(array, delimiter) таким чином, 
-// щоб вона повертала у змінній string результат 
+// Доповни код функції makeStringFromArray(array, delimiter) таким чином,
+// щоб вона повертала у змінній string результат
 // з'єднання елементів масиву array з роздільником delimiter - рядок.
 
 // Оголошена функція makeStringFromArray(array, delimiter)
 
-// Виклик makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " ") 
+// Виклик makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " ")
 // повертає "Mango hurries to the train"
 
-// Виклик makeStringFromArray(["M", "a", "n", "g", "o"], "")) 
+// Виклик makeStringFromArray(["M", "a", "n", "g", "o"], ""))
 // повертає "Mango"
 
-// Виклик makeStringFromArray(["top", "picks", "for", "you"], "_") 
+// Виклик makeStringFromArray(["top", "picks", "for", "you"], "_")
 // повертає "top_picks_for_you"
 // ___________________________________________________________________
 
@@ -873,7 +871,6 @@
 //   let string;
 //   // Change code below this line
 //  string = array.join(delimiter);
-
 
 //   // Change code above this line
 //   return string;
@@ -883,12 +880,12 @@
 // console.log(makeStringFromArray(["top", "picks", "for", "you"], "_"));
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// Термін slug - це людино-зрозумілий унікальний ідентифікатор, 
+// Термін slug - це людино-зрозумілий унікальний ідентифікатор,
 // який використовується у веб-розробці для створення читабельних URL-адрес.
 
 // Наприклад, замість того, щоб користувач побачив в адресному рядку
 //  mysite.com/posts/1q8fh74tx, можна зробити slug з назви статті.
-//  В результаті адреса буде приємнішою для 
+//  В результаті адреса буде приємнішою для
 // сприйняття: mysite.com/posts/arrays-for-begginers.
 
 // Увага
@@ -896,10 +893,10 @@
 
 // ЗАДАЧА: ГЕНЕРАТОР SLUG
 // ______________________________________________________________________________
-// Напиши функцію slugify(title), яка приймає заголовок статті, 
+// Напиши функцію slugify(title), яка приймає заголовок статті,
 // параметр title, і повертає slug, створений з цього рядка.
 
-// Значенням параметра title будуть рядки, 
+// Значенням параметра title будуть рядки,
 // слова яких розділені лише пробілами
 
 // Усі символи slug повинні бути у нижньому регістрі
@@ -908,24 +905,22 @@
 
 // Оголошена функція slugify(title)
 
-// Виклик slugify("Arrays for begginers") 
+// Виклик slugify("Arrays for begginers")
 // повертає "arrays-for-begginers"
 
-// Виклик slugify("English for developer") 
+// Виклик slugify("English for developer")
 // повертає "english-for-developer"
 
-// Виклик slugify("Ten secrets of JavaScript") 
+// Виклик slugify("Ten secrets of JavaScript")
 // повертає "ten-secrets-of-javascript"
 
-// Виклик slugify("How to become a JUNIOR developer in TWO WEEKS") 
+// Виклик slugify("How to become a JUNIOR developer in TWO WEEKS")
 // повертає "how-to-become-a-junior-developer-in-two-weeks"
 // ____________________________________________________________________________
 // function slugify(title) {
 //   // Change code below this line
 
 // return title.toLowerCase().split(" ").join("-");
-
-
 
 //   // Change code above this line
 // }
@@ -935,16 +930,16 @@
 // console.log(slugify("How to become a JUNIOR developer in TWO WEEKS"));
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// Метод slice(begin, end) повертає новий масив, 
-// що містить копію частини вихідного масиву, 
-// не змінюючи його. Копія робиться від begin і до, 
+// Метод slice(begin, end) повертає новий масив,
+// що містить копію частини вихідного масиву,
+// не змінюючи його. Копія робиться від begin і до,
 // але не включно, end - індекси елементів вихідного масиву.
 
 // Якщо begin та end не вказані, буде створена повна копія вихідного масиву.
 
 // Якщо не вказаний end, копіювання буде від start до кінця вихідного масиву.
 
-// Якщо значення start від'ємне, а end не вказане, 
+// Якщо значення start від'ємне, а end не вказане,
 // то будуть скопійовані останні N елементів.
 
 // const planets = ["Earth", "Mars", "Venus", "Jupiter", "Saturn"];
@@ -955,7 +950,7 @@
 // console.log(planets.slice(-2)); // ['Jupiter', 'Saturn']
 // console.log(planets.slice()); // ['Earth', 'Mars', 'Venus', 'Jupiter', 'Saturn']
 // __________________________________________________________________________________________
-// Доповни код таким чином, щоб змінні містили часткові копії 
+// Доповни код таким чином, щоб змінні містили часткові копії
 // вихідного масиву fruits.
 
 // firstTwoEls - масив із перших двох елементів
@@ -976,7 +971,7 @@
 // Оголошена змінна lastThreeEls
 // Значення змінної lastThreeEls - це масив ["pear", "orange", "banana"]
 
-// Змінній lastThreeEls присвоєна копія частини масиву fruits 
+// Змінній lastThreeEls присвоєна копія частини масиву fruits
 // після застосування методу slice з правильними аргументами
 // __________________________________________________________________________________________
 // const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
@@ -991,8 +986,8 @@
 // console.log(lastThreeEls);
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// Метод concat використовується для об'єднання двох або більше масивів. 
-// Він не змінює масив на якому викликається, а повертає новий. 
+// Метод concat використовується для об'єднання двох або більше масивів.
+// Він не змінює масив на якому викликається, а повертає новий.
 // Порядок аргументів методу впливає на порядок елементів нового масиву.
 
 // const firstArray = ["Mercury", "Venus", "Earth"];
@@ -1003,7 +998,7 @@
 // console.log(firstArray); // ['Mercury', 'Venus', 'Earth'];
 // console.log(allPlanets); // ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
 // ______________________________________________________________________
-// Доповни код таким чином, щоб у змінній allClients утворився масив 
+// Доповни код таким чином, щоб у змінній allClients утворився масив
 // усіх елементів масивів oldClients і newClients.
 
 // Оголошена змінна oldClients
@@ -1030,41 +1025,41 @@
 
 // ЗАДАЧА: КОМПОЗИЦІЯ МАСИВІВ
 // _________________________________________________________________________
-// Напиши функцію makeArray(firstArray, secondArray, maxLength) 
-// для створення нового масиву з усіма елементами двох вихідних 
-// firstArray і secondArray. Параметр maxLength містить максимально 
+// Напиши функцію makeArray(firstArray, secondArray, maxLength)
+// для створення нового масиву з усіма елементами двох вихідних
+// firstArray і secondArray. Параметр maxLength містить максимально
 // допустиму довжину нового масиву.
 
-// Якщо кількість елементів нового масиву більша за maxLength, 
-// функція повинна повернути копію масиву довжиною maxLength елементів. 
+// Якщо кількість елементів нового масиву більша за maxLength,
+// функція повинна повернути копію масиву довжиною maxLength елементів.
 // В іншому випадку функція повинна повернути новий масив повністю.
 
 // Оголошена функція makeArray(firstArray, secondArray, maxLength)
 
-// Виклик makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3) 
+// Виклик makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)
 // повертає ["Mango", "Poly", "Ajax"]
 
-// Виклик makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4) 
+// Виклик makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)
 // повертає ["Mango", "Poly", "Houston", "Ajax"]
 
-// Виклик makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3) 
+// Виклик makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)
 // повертає ["Mango", "Ajax", "Chelsea"]
 
-// Виклик makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2) 
+// Виклик makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)
 // повертає ["Earth", "Jupiter"]
 
-// Виклик makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4) 
+// Виклик makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)
 // повертає ["Earth", "Jupiter", "Neptune", "Uranus"]
 
-// Виклик makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0) 
+// Виклик makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)
 // повертає []
 
-// Виклик функції makeArray() з випадковими масивами і випадковим числом 
+// Виклик функції makeArray() з випадковими масивами і випадковим числом
 // повертає правильний масив
 // _______________________________________________________________________________
 // function makeArray(firstArray, secondArray, maxLength) {
 //   // Change code below this line
-// const newArray = firstArray.concat(secondArray) 
+// const newArray = firstArray.concat(secondArray)
 // if (newArray.length > maxLength) {
 //   return newArray.slice(0, maxLength);
 // }
@@ -1081,35 +1076,35 @@
 // console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0));
 // console.log(makeArray([]));
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// Цикли використовуються для багаторазового повторення коду. 
+// Цикли використовуються для багаторазового повторення коду.
 // Оголошення циклу for складається з трьох виразів.
 
 // for (Ініціалізація; Умова; Пост - вираз) {
 //   // Тіло циклу
 // }
-// Ініціалізація - виконується один раз перед початком циклу. 
-// Використовується для створення змінної-лічильника і 
+// Ініціалізація - виконується один раз перед початком циклу.
+// Використовується для створення змінної-лічильника і
 // встановлення її початкового значення.
 
-// Умова - вираз, що оцінюється перед кожною ітерацією (повторенням) циклу. 
-// Тіло циклу виконується тільки тоді, коли вираз приводиться до true. 
+// Умова - вираз, що оцінюється перед кожною ітерацією (повторенням) циклу.
+// Тіло циклу виконується тільки тоді, коли вираз приводиться до true.
 // Цикл завершується, якщо значення буде false.
 
-// Пост-вираз - виконується в кінці кожного повторення циклу, 
+// Пост-вираз - виконується в кінці кожного повторення циклу,
 // перед перевіркою умови. Використовується для оновлення змінної-лічильника.
 
-// Тіло - набір інструкцій для виконання на кожному повторенні. 
+// Тіло - набір інструкцій для виконання на кожному повторенні.
 // Виконується, якщо вираз умови приводиться до true.
 
 // for (let i = 0; i <= 20; i += 5) {
 //   console.log(i);
 // }
-// В прикладі оголошується змінна i, ініціалізується значенням 0, 
-// і цикл виконується (його тіло) доти, доки i <= 20, тобто умова 
+// В прикладі оголошується змінна i, ініціалізується значенням 0,
+// і цикл виконується (його тіло) доти, доки i <= 20, тобто умова
 // приводиться до true. Після кожної ітерації лічильник збільшується на 5.
 // _________________________________________________________________________
-// Доповни цикл for таким чином, 
-// щоб він логував всі цілі числа в діапазоні 
+// Доповни цикл for таким чином,
+// щоб він логував всі цілі числа в діапазоні
 // від start до end включно.
 // _______________________________________________________________________
 // const start = 3;
@@ -1122,9 +1117,9 @@
 
 // ЗАДАЧА: СУМА ЧИСЕЛ (ЦИКЛ FOR)
 // ____________________________________________________________________
-// Напиши функцію calculateTotal(number), яка приймає ціле число 
-// (параметр number) і повертає суму всіх цілих чисел від одиниці і 
-// до цього числа. Наприклад, якщо number дорівнює 3, то сума - 
+// Напиши функцію calculateTotal(number), яка приймає ціле число
+// (параметр number) і повертає суму всіх цілих чисел від одиниці і
+// до цього числа. Наприклад, якщо number дорівнює 3, то сума -
 // це 1 + 2 + 3, тобто 6.
 
 // Оголошена функція calculateTotal(number)
@@ -1133,18 +1128,18 @@
 // Виклик функції calculateTotal(7) повертає 28
 // Виклик функції calculateTotal(18) повертає 171
 // Виклик функції calculateTotal(24) повертає 300
-// Виклик функції calculateTotal() з випадковим числом повертає 
+// Виклик функції calculateTotal() з випадковим числом повертає
 // правильне значення
 // _______________________________________________________________________
 // function calculateTotal(number) {
 //   // Change code below this line
 //   let total = 0;
-//  for (let i = 0; i <= number; i += 1) 
+//  for (let i = 0; i <= number; i += 1)
 //  {
 //  total += i;
 //  }
 //   return total
- 
+
 //    // Change code above this line
 //  }
 //  console.log(calculateTotal(1));
@@ -1154,7 +1149,7 @@
 //  console.log(calculateTotal(24));
 //  console.log(calculateTotal(100));
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// Цикл for можна використовувати для ітерації по масиву, 
+// Цикл for можна використовувати для ітерації по масиву,
 // тобто «перебрати» його поелементно.
 
 // const planets = ["Earth", "Mars", "Venus"];
@@ -1162,12 +1157,12 @@
 // for (let i = 0; i < planets.length; i += 1) {
 //   console.log(planets[i]);
 // }
-// Для доступу до елементів використовується синтаксис квадратних 
-// дужок масив[індекс], де індекс - це значення лічильника циклу 
-// від 0 і до останнього індексу масиву, який на одиницю менший 
+// Для доступу до елементів використовується синтаксис квадратних
+// дужок масив[індекс], де індекс - це значення лічильника циклу
+// від 0 і до останнього індексу масиву, який на одиницю менший
 // за довжину масиву.
 // ______________________________________________________________________
-// Доповни код циклу for таким чином, щоб він послідовно логував 
+// Доповни код циклу for таким чином, щоб він послідовно логував
 // усі елементи масиву fruits.
 // ______________________________________________________________________
 // const fruits = ['apple', 'plum', 'pear', 'orange'];
@@ -1187,32 +1182,32 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // ЗАДАЧА: ОБЧИСЛЕННЯ СУМИ ПОКУПКИ
 // ______________________________________________________________
-// Напиши функцію calculateTotalPrice(order), 
-// яка приймає один параметр order - масив чисел, 
-// і обчислює загальну суму його елементів. Загальна сума 
-// елементів повинна зберігатися у змінній total, яка повертається 
+// Напиши функцію calculateTotalPrice(order),
+// яка приймає один параметр order - масив чисел,
+// і обчислює загальну суму його елементів. Загальна сума
+// елементів повинна зберігатися у змінній total, яка повертається
 // як результат роботи функції.
 
 // Оголошена функція calculateTotalPrice(order)
 
-// Виклик функції calculateTotalPrice([12, 85, 37, 4]) 
+// Виклик функції calculateTotalPrice([12, 85, 37, 4])
 // повертає 138
 
-// Виклик функції calculateTotalPrice([164, 48, 291]) 
+// Виклик функції calculateTotalPrice([164, 48, 291])
 // повертає 503
 
-// Виклик функції calculateTotalPrice([412, 371, 94, 63, 176]) 
+// Виклик функції calculateTotalPrice([412, 371, 94, 63, 176])
 // повертає 1116
 
-// Виклик функції calculateTotalPrice() з випадковим масивом 
+// Виклик функції calculateTotalPrice() з випадковим масивом
 // повертає правильне значення
 // _________________________________________________________________________
 // function calculateTotalPrice(order) {
 //   let total = 0;
 //   // Change code below this line
-//   for (let i = 0; i < order.length; i += 1) { 
+//   for (let i = 0; i < order.length; i += 1) {
 //       total += order[i]
-    
+
 //     }
 //   // Change code above this line
 //   return total;
@@ -1224,22 +1219,22 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // ЗАДАЧА: ПОШУК НАЙДОВШОГО СЛОВА
 // ___________________________________________________________________
-// Напиши функцію findLongestWord(string), яка приймає довільний рядок, 
-// що складається тільки зі слів, розділених пробілом (параметр string), 
+// Напиши функцію findLongestWord(string), яка приймає довільний рядок,
+// що складається тільки зі слів, розділених пробілом (параметр string),
 // і повертає найдовше слово в цьому рядку.
 
 // Оголошена функція findLongestWord(string)
 
-// Виклик функції findLongestWord("The quick brown fox jumped over the lazy dog") 
+// Виклик функції findLongestWord("The quick brown fox jumped over the lazy dog")
 // повертає jumped
 
-// Виклик функції findLongestWord("Google do a roll") 
+// Виклик функції findLongestWord("Google do a roll")
 // повертає Google
 
-// Виклик функції findLongestWord("May the force be with you") 
+// Виклик функції findLongestWord("May the force be with you")
 // повертає force
 
-// Виклик функції findLongestWord() з випадковим рядком 
+// Виклик функції findLongestWord() з випадковим рядком
 // повертає правильне значення
 // _________________________________________________________________
 // function findLongestWord(string) {
@@ -1250,10 +1245,10 @@
 
 // for (let i = 0; i < array.length; i += 1) {
 //   if (longestWord.length < array[i].length) {
-  
+
 //     longestWord = array[i];
 //   }
- 
+
 // }
 //  return longestWord
 //   // Change code above this line
@@ -1264,8 +1259,8 @@
 // console.log(findLongestWord("May the force be with you"));
 // console.log(findLongestWord('sdasdasdasd sad s awd dw dweqwdddddddddddddddeqweqwe qw fgdfhgdfgd fg dfg dfgfgdfgdfgdfgdfgdfgdf'));
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// 
-// Метод push() дозволяє додати один або кілька елементів в кінець масиву, 
+//
+// Метод push() дозволяє додати один або кілька елементів в кінець масиву,
 // без необхідності вказувати індекси елементів, що додаються.
 
 // const planets = ["Earth", "Mars", "Venus"];
@@ -1275,21 +1270,21 @@
 // console.log(planets); // ['Earth', 'Mars', 'Venus', 'Jupiter',
 //  'Saturn', 'Uranus', 'Neptune']
 // ____________________________________________________________________
-// Доповни код функції createArrayOfNumbers(min, max) таким чином, 
+// Доповни код функції createArrayOfNumbers(min, max) таким чином,
 // щоб вона повертала масив усіх цілих чисел від значення min до max.
 
 // Оголошена функція createArrayOfNumbers(min, max)
 
-// Виклик функції createArrayOfNumbers(1, 3) 
+// Виклик функції createArrayOfNumbers(1, 3)
 // повертає [1, 2, 3]
 
-// Виклик функції createArrayOfNumbers(14, 17) 
+// Виклик функції createArrayOfNumbers(14, 17)
 // повертає [14, 15, 16, 17]
 
-// Виклик функції createArrayOfNumbers(29, 34) 
+// Виклик функції createArrayOfNumbers(29, 34)
 // повертає [29, 30, 31, 32, 33, 34]
 
-// Виклик функції createArrayOfNumbers() з випадковими min і max 
+// Виклик функції createArrayOfNumbers() з випадковими min і max
 // повертає правильний масив
 
 // В циклі for використовувався метод push
@@ -1298,7 +1293,7 @@
 //   const numbers = [];
 //   // Change code below this line
 // for (let i = min; i <= max; i += 1) {
-  
+
 //   numbers.push(i);
 // }
 //   // Change code above this line
@@ -1311,9 +1306,9 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // ЗАДАЧА: ФІЛЬТРАЦІЯ МАСИВУ ЧИСЕЛ
 // _______________________________________________________________________
-// Напиши функцію filterArray(numbers, value), 
-// яка приймає масив чисел (параметр numbers) і повертає новий масив, 
-// в якому будуть тільки ті елементи масиву numbers, які більші за 
+// Напиши функцію filterArray(numbers, value),
+// яка приймає масив чисел (параметр numbers) і повертає новий масив,
+// в якому будуть тільки ті елементи масиву numbers, які більші за
 // значення параметра value (число).
 
 // Оголошена функція filterArray(numbers, value)
@@ -1328,7 +1323,7 @@
 
 // Виклик функції filterArray([12, 24, 8, 41, 76], 20) повертає [24, 41, 76]
 
-// Виклик функції filterArray() з випадковим масивом і числом 
+// Виклик функції filterArray() з випадковим масивом і числом
 // повертає правильний масив
 
 // В циклі for використовувався метод push
@@ -1376,10 +1371,10 @@
 // console.log(filterArray([32, 44, 65, 77, 88, 99, 42, 28]));
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// Метод includes(value) перевіряє, чи присутній в масиві елемент зі 
-// значенням value, і повертає true або false відповідно. 
-// Сфера застосування цього методу зводиться до ситуацій, 
-// коли необхідно перевірити, чи присутній елемент в масиві, 
+// Метод includes(value) перевіряє, чи присутній в масиві елемент зі
+// значенням value, і повертає true або false відповідно.
+// Сфера застосування цього методу зводиться до ситуацій,
+// коли необхідно перевірити, чи присутній елемент в масиві,
 // і не важлива його позиція (індекс).
 
 // const planets = ["Earth", "Mars", "Venus"];
@@ -1389,7 +1384,7 @@
 // console.log(planets.includes("Venus")); // true
 // console.log(planets.includes("Jupiter")); // false
 // ___________________________________________________________________
-// Функція checkFruit(fruit) приймає рядок з назвою фрукта (параметр fruit), 
+// Функція checkFruit(fruit) приймає рядок з назвою фрукта (параметр fruit),
 // і перевіряє, чи присутній такий фрукт в масиві fruits.
 
 // Доповни код функції таким чином, що якщо:
@@ -1397,7 +1392,6 @@
 // фрукт присутній в масиві, то функція повертає true;
 
 // фрукт відсутній в масиві, то функція повертає false.
-
 
 // Оголошена функція checkFruit(fruit)
 
@@ -1411,7 +1405,7 @@
 
 // Виклик checkFruit("apple") повертає true
 
-// Виклик функції checkFruit() з випадковим словом 
+// Виклик функції checkFruit() з випадковим словом
 // повертає правильне значення boolean
 
 // У функції використовувався метод includes
@@ -1430,37 +1424,37 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // ЗАДАЧА: СПІЛЬНІ ЕЛЕМЕНТИ
 // ___________________________________________________________________
-// Спільними елементами масивів називають ті елементи, 
+// Спільними елементами масивів називають ті елементи,
 // які присутні у всіх масивах.
 
-// Наприклад, у двох масивах [1, 3, 5] і [0, 8, 5, 3] 
-// спільними будуть числа 3 і 5, оскільки вони присутні в 
-// обох вихідних масивах. А числа 0, 1 і 8 присутні тільки в 
+// Наприклад, у двох масивах [1, 3, 5] і [0, 8, 5, 3]
+// спільними будуть числа 3 і 5, оскільки вони присутні в
+// обох вихідних масивах. А числа 0, 1 і 8 присутні тільки в
 // одному з масивів.
 
-// Напиши функцію getCommonElements(array1, array2), 
-// яка отримує два масиви довільної довжини в параметри array1 і array2, 
-// і повертає новий масив, що складається з тих елементів, які присутні 
+// Напиши функцію getCommonElements(array1, array2),
+// яка отримує два масиви довільної довжини в параметри array1 і array2,
+// і повертає новий масив, що складається з тих елементів, які присутні
 // в обох вихідних масивах.
 
 // Оголошена функція getCommonElements(array1, array2)
 
-// Виклик getCommonElements([1, 2, 3], [2, 4]) 
+// Виклик getCommonElements([1, 2, 3], [2, 4])
 // повертає [2]
 
-// Виклик getCommonElements([1, 2, 3], [2, 1, 17, 19]) 
+// Виклик getCommonElements([1, 2, 3], [2, 1, 17, 19])
 // повертає [1, 2]
 
-// Виклик getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]) 
+// Виклик getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27])
 // повертає [12, 27, 3]
 
-// Виклик getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]) 
+// Виклик getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40])
 // повертає [10, 30, 40]
 
-// Виклик getCommonElements([1, 2, 3], [10, 20, 30]) 
+// Виклик getCommonElements([1, 2, 3], [10, 20, 30])
 // повертає []
 
-// Виклик функції getCommonElements() з випадковими двома масивами 
+// Виклик функції getCommonElements() з випадковими двома масивами
 // повертає правильний масив
 
 // В циклі for використовувалися методи includes і push
@@ -1487,9 +1481,9 @@
 // console.log(getCommonElements([8, 45, 33, 76, 88, 999, 101], [101, 32, 42, 88, 14, 666, 8, 33]));
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// Інструкція for...of оголошує цикл, який перебирає ітерабельні об'єкти, 
-// такі як масиви та рядки. Тіло циклу буде виконуватися для значення 
-// кожного елемента. Це хороша заміна циклу for, якщо не потрібен доступ 
+// Інструкція for...of оголошує цикл, який перебирає ітерабельні об'єкти,
+// такі як масиви та рядки. Тіло циклу буде виконуватися для значення
+// кожного елемента. Це хороша заміна циклу for, якщо не потрібен доступ
 // до лічильника ітерації.
 
 // for (const variable of iterable) {
@@ -1506,24 +1500,24 @@
 //   console.log(planet);
 // }
 // ______________________________________________________________________
-// Виконай рефакторинг коду функції calculateTotalPrice(order), 
+// Виконай рефакторинг коду функції calculateTotalPrice(order),
 // замінивши цикл for на for...of.
 
 // Оголошена функція calculateTotalPrice(order)
 
-// Виклик функції calculateTotalPrice([12, 85, 37, 4]) 
+// Виклик функції calculateTotalPrice([12, 85, 37, 4])
 // повертає 138
 
-// Виклик функції calculateTotalPrice([164, 48, 291]) 
+// Виклик функції calculateTotalPrice([164, 48, 291])
 // повертає 503
 
-// Виклик функції calculateTotalPrice([412, 371, 94, 63, 176]) 
+// Виклик функції calculateTotalPrice([412, 371, 94, 63, 176])
 // повертає 1116
 
-// Виклик функції calculateTotalPrice([]) 
+// Виклик функції calculateTotalPrice([])
 // повертає 0
 
-// Виклик функції calculateTotalPrice() з випадковим масивом чисел 
+// Виклик функції calculateTotalPrice() з випадковим масивом чисел
 // повертає правильну суму
 // ______________________________________________________________________
 // function calculateTotalPrice(order) {
@@ -1546,27 +1540,27 @@
 
 // ЗАДАЧА: ФІЛЬТРАЦІЯ МАСИВУ ЧИСЕЛ 2.0
 
-// Виконай рефакторинг функції filterArray(numbers, value), 
+// Виконай рефакторинг функції filterArray(numbers, value),
 // замінивши цикл for на for...of.
 
 // Оголошена функція filterArray(numbers, value)
 
-// Виклик функції filterArray([1, 2, 3, 4, 5], 3) 
+// Виклик функції filterArray([1, 2, 3, 4, 5], 3)
 // повертає [4, 5]
 
-// Виклик функції filterArray([1, 2, 3, 4, 5], 4) 
+// Виклик функції filterArray([1, 2, 3, 4, 5], 4)
 // повертає [5]
 
-// Виклик функції filterArray([1, 2, 3, 4, 5], 5) 
+// Виклик функції filterArray([1, 2, 3, 4, 5], 5)
 // повертає []
 
-// Виклик функції filterArray([12, 24, 8, 41, 76], 38) 
+// Виклик функції filterArray([12, 24, 8, 41, 76], 38)
 // повертає [41, 76]
 
-// Виклик функції filterArray([12, 24, 8, 41, 76], 20) 
+// Виклик функції filterArray([12, 24, 8, 41, 76], 20)
 // повертає [24, 41, 76]
 
-// Виклик функції filterArray() з випадковим масивом і числом 
+// Виклик функції filterArray() з випадковим масивом і числом
 // повертає правильний масив
 
 // Функція filterArray() використовує цикл for..of
@@ -1616,8 +1610,8 @@
 // console.log(filterArray([12, 24, 8, 41, 76], 20));
 // console.log(filterArray([13, 42, 52, 88, 31], 13));
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// Замість того, щоб повертати результат ділення, 
-// операція за модулем (%) повертає цілочисельну остачу від 
+// Замість того, щоб повертати результат ділення,
+// операція за модулем (%) повертає цілочисельну остачу від
 // ділення двох чисел - діленого і дільника.
 
 // 5 % 1 = 0;
@@ -1658,8 +1652,8 @@
 
 // ЗАДАЧА: ПАРНІ ЧИСЛА
 // _________________________________________________________
-// Напиши функцію getEvenNumbers(start, end), яка 
-// повертає масив усіх парних чисел від start до end. 
+// Напиши функцію getEvenNumbers(start, end), яка
+// повертає масив усіх парних чисел від start до end.
 // Парним вважається число, яке ділиться на 2 без остачі (10 % 2 === 0).
 
 // Оголошена функція getEvenNumbers(start, end)
@@ -1669,7 +1663,7 @@
 // Виклик функції getEvenNumbers(6, 12) повертає [6, 8, 10, 12]
 // Виклик функції getEvenNumbers(8, 8) повертає [8]
 // Виклик функції getEvenNumbers(7, 7) повертає []
-// Виклик функції getEvenNumbers() з випадковими start і end 
+// Виклик функції getEvenNumbers() з випадковими start і end
 // повертає правильний масив
 // _______________________________________________________________
 // function getEvenNumbers(start, end) {
@@ -1679,7 +1673,7 @@
 //  if (i % 2 === 0) {
 //  numb.push(i);
 //  }
- 
+
 //  }
 // return numb;
 
@@ -1706,11 +1700,11 @@
 // console.log(number);
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// Якщо цикл знаходиться в тілі функції, то оператор break не припиняє 
-// виконання функції, а тільки перерве цикл. Для того щоб переривати 
+// Якщо цикл знаходиться в тілі функції, то оператор break не припиняє
+// виконання функції, а тільки перерве цикл. Для того щоб переривати
 // виконання відразу циклу і функції, є оператор return.
 
-// У прикладі шукаємо число 3. Щойно виконається умова if, 
+// У прикладі шукаємо число 3. Щойно виконається умова if,
 // робимо повернення, яке перерве виконання циклу і функції.
 
 // function fn() {
@@ -1731,7 +1725,7 @@
 // console.log("Лог після виходу з функції");
 // console.log(`Результат виконання функції ${result}`);
 // _________________________________________________________________
-// Виконай рефакторинг функції findNumber(start, end, divisor) таким чином, 
+// Виконай рефакторинг функції findNumber(start, end, divisor) таким чином,
 // щоб вона:
 
 // повертала перше число від start до end, яке ділиться на divisor без остачі
@@ -1746,10 +1740,10 @@
 // Виклик findNumber(8, 17, 3) повертає 9
 // Виклик findNumber(6, 9, 4) повертає 8
 // Виклик findNumber(16, 35, 7) повертає 21
-// Виклик findNumber() з випадковим набором чисел 
+// Виклик findNumber() з випадковим набором чисел
 // повертає правильний результат
 
-// В циклі for не повинен використовуватися break для виходу до 
+// В циклі for не повинен використовуватися break для виходу до
 // завершення всіх ітерацій циклу
 // ______________________________________________________
 // function findNumber(start, end, divisor) {
@@ -1764,7 +1758,7 @@
 //     }
 //   }
 
-//   // return number; 
+//   // return number;
 //   // Change code above this line
 // }
 // console.log(findNumber(2, 6, 5));
@@ -1775,44 +1769,43 @@
 //
 // ЗАДАЧА: ФУНКЦІЯ INCLUDES()
 // _______________________________________________________________________________
-// Напиши функцію includes(array, value), яка робить те саме, 
+// Напиши функцію includes(array, value), яка робить те саме,
 // що і метод масиву масив.includes(значення) - перевіряє, ч
-// и присутнє в масиві array значення value, повертаючи true, 
+// и присутнє в масиві array значення value, повертаючи true,
 // якщо присутнє, і false в іншому випадку.
 
-// При виконанні цього завдання в тілі функції includes() не можна 
+// При виконанні цього завдання в тілі функції includes() не можна
 // використовувати метод масив.includes(значення).
 
 // Оголошена функція includes(array, value)
 
-// Виклик includes([1, 2, 3, 4, 5], 3) 
+// Виклик includes([1, 2, 3, 4, 5], 3)
 // повертає true
 
-// Виклик includes([1, 2, 3, 4, 5], 17) 
+// Виклик includes([1, 2, 3, 4, 5], 17)
 // повертає false
 
-// Виклик includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter") 
+// Виклик includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter")
 // повертає true
 
-// Виклик includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus") 
+// Виклик includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus")
 // повертає false
 
-// Виклик includes(["apple", "plum", "pear", "orange"], "plum") 
+// Виклик includes(["apple", "plum", "pear", "orange"], "plum")
 // повертає true
 
-// Виклик includes(["apple", "plum", "pear", "orange"], "kiwi") 
+// Виклик includes(["apple", "plum", "pear", "orange"], "kiwi")
 // повертає false
 
-// Виклик includes() для випадкового масиву з випадковим value 
+// Виклик includes() для випадкового масиву з випадковим value
 // повертає правильний boolean
 
-// У функції includes використовується for, return, 
+// У функції includes використовується for, return,
 // але не метод масиву includes
 // _______________________________________________________________________________
 
 // function includes(array, value) {
 //   // Change code below this line
-
 
 // for (let i = 0; i <=array.length; i += 1) {
 //   if (array[i] === value) {
@@ -1830,5 +1823,312 @@
 // console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"));
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-
 // //////////////////////////////////////||MODULE-3||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// const books = [
+//     {
+//       title: "The Last Kingdom",
+//       author: "Bernard Cornwell",
+//       rating: 8.38,
+//     },
+//     {
+//       title: "На березі спокійних вод",
+//       author: "Роберт Шеклі",
+//       rating: 8.51,
+//     },
+//   ];
+  
+//   for (const book of books) {
+//     console.log(book.title);
+//     console.log(book.author);
+//     console.log(book.rating);
+//   }
+
+// for (const { title, author, rating } of books) {
+//     console.log(title);
+//     console.log(author);
+//     console.log(rating);
+//   }
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// const apartment = {
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//   };
+//   const keys = [];
+//   const values = [];
+//   // Change code below this line
+//   for (const key in apartment) {
+//    keys.push(key);
+//    values.push(apartment[key])
+
+//   }
+//   console.log(apartment);
+//   console.log(keys);
+//   console.log(values);
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// function countProps(object) {
+//     let propCount = 0;
+//     // Change code below this line
+//   const keys = Object.keys(object);
+//   for (const key of keys) {
+//     propCount += 1;
+//   }
+//     // Change code above this line
+//     return propCount;
+//   }
+// console.log(countProps({}));
+// console.log(countProps({ name: "Mango", age: 2 }));
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));  
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// const apartment = {
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//   };
+//   const values = [];
+//   // Change code below this line
+//   const keys = Object.keys(apartment);
+  
+//   for (const key of keys) 
+//   {
+//     keys.push(key);
+//     values.push(apartment[key]);
+   
+//   }
+//    console.log(key);
+//     console.log(apartment[key]);
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//повертає
+
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+  
+//   function getProductPrice(productName) {
+//     // Change code below this line
+//     for (const product of products) {
+//       if (productName === product.name) {
+//         return product.price;
+//       }
+//     }
+//     return null;
+//     // Change code above this line
+//   }
+//   console.log(getProductPrice("Radar"));
+//   console.log(getProductPrice("Grip"));
+//   console.log(getProductPrice("Scanner"));
+//   console.log(getProductPrice("Droid"));
+//   console.log(getProductPrice("Engine"));
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+  
+//   function getAllPropValues(propName) {
+//     // Change code below this line
+//     let value = [];
+//       for (const product of products) {
+//           if (propName === "name") {
+//              value.push(product.name)
+//           } else if (propName === "price") {
+//               value.push(product.price)
+//           } else if (propName === "quantity") {
+//               value.push(product.quantity)
+//           }
+//       }
+//    return value
+//       // Change code above this line
+//     }
+//     console.log(getAllPropValues("name"));
+//     console.log(getAllPropValues("quantity"));
+//     console.log(getAllPropValues("price"));
+//     console.log(getAllPropValues("category"));
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+  
+//   function calculateTotalPrice(productName) {
+//     // Change code below this line
+//     let sum = 0;
+
+// //   console.log(values)
+//   for (const product of products) {
+//     if (productName === product.name) {
+//         sum = (product.price * product.quantity)
+//     }
+// }
+//     return sum;
+// // Change code above this line
+
+//   }  
+
+// console.log(calculateTotalPrice("Radar"));
+// console.log(calculateTotalPrice("Blaster"));
+// console.log(calculateTotalPrice("Droid"));
+// console.log(calculateTotalPrice("Grip"));
+// console.log(calculateTotalPrice("Scanner"));
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// // В консолі буде масив
+// const temps = [14, -4, 25, 8, 11];
+// console.log(temps);
+// // ❌ Так не спрацює, тому що передаємо цілий масив
+// console.log(Math.max(temps)); // NaN
+
+// // В консолі буде набір окремих чисел
+// console.log(...temps);
+// // ✅ Розподілимо колекцію елементів у якості окремих аргументів
+// console.log(Math.max(...temps)); // 25
+
+// _____________________________________________________________
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = scores;
+// const worstScore = scores;
+// console.log(Math.max(...bestScore));
+// console.log(Math.min(...worstScore));
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// function makeTask(data) {
+//     const completed = false;
+//     const category = "General";
+//     const priority = "Normal";
+//     // Change code below this line
+//   const newObject = { category, priority, ...data, completed,};
+//     return newObject;
+//     // Change code above this line
+//   }
+// console.log(makeTask({}));
+// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
+// console.log(makeTask({ category: "Finance", text: "Take interest" }));
+// console.log(makeTask({ priority: "Low", text: "Choose shampoo" }));
+// console.log(makeTask({ text: "Buy bread" }));  
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Change code below this line
+// function add(...args) {
+//     let result = 0;
+//     for (let arg of args) {
+//         result += arg
+//     }
+  
+//       return result;
+//     // Change code above this line
+//   }
+// console.log(add(15, 27));
+// console.log(add(12, 4, 11, 48));
+// console.log(add(32, 6, 13, 19, 8));
+// console.log(add(74, 11, 62, 46, 12, 36));  
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Change code below this line
+// function findMatches(arr, ...args) {
+//     const matches = []; // Don't change this line
+//   for (const arg of args) {
+
+//     if (arr.includes(arg)) {
+//             matches.push(arg);
+//     }
+//   }
+//     // Change code above this line
+//     return matches;
+//   }
+// console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+// console.log(findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
+// console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
+// console.log(findMatches([63, 11, 8, 29], 4, 7, 16));  
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// const bookShelf = {
+//     books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//     updateBook(oldName, newName) {
+//       // Change code below this line
+//        let idx = this.books.indexOf(oldName);
+//           if (idx !== -1) {
+//               this.books.splice(idx, 1, newName);
+//           }
+//           return this.books;
+  
+  
+//       // Change code above this line
+//     },
+//   };
+// console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
+// console.log(bookShelf.updateBook("The last kingdom", "Dune"));  
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+const atTheOldToad = {
+    potions: [
+      { name: "Speed potion", price: 460 },
+      { name: "Dragon breath", price: 780 },
+      { name: "Stone skin", price: 520 },
+    ],
+    // Change code below this line
+    getPotions() {
+      return this.potions;
+    },
+addPotion(newPotion) {
+    for (const potion of this.potions) {
+      if (this.potions.includes(newPotion)) {
+        return `Error! Potion ${newPotion} is already in your inventory!`;
+      }
+    }
+      this.potions.push(newPotion);
+    },
+removePotion(potionName) {
+        for (let i = 0; i < this.potions.length; i++) {
+            if (potionName === this.potions[i].name) {
+              return this.potions.splice(i, 1)
+            }
+          }
+          return `Potion ${potionName} is not in inventory!`
+    },
+updatePotionName(oldName, newName) {
+    //   const potionIndex = this.potions.indexOf(oldName);
+  for (const potion of this.potion) {
+      if (potionIndex === -1) {
+        return `Potion ${oldName} is not in inventory!`;
+      }
+    }
+      this.potions.splice(potionIndex, 1, newName);
+    },
+    // Change code above this line
+  };
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

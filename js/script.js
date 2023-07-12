@@ -2734,9 +2734,22 @@
 // console.log(sortedByAscendingRating);
 // console.log(sortedByDescendingRating);
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// function greetGuest(greeting) {
+//   console.log(`${greeting}, ${this.username}.`);
+// }
 
+// const mango = {
+//   username: "Манго",
+// };
+// const poly = {
+//   username: "Полі",
+// };
 
+// greetGuest.apply(mango, ["Ласкаво просимо"]); // Ласкаво просимо, Манго.
+// greetGuest.apply(poly, ["З прибуттям"]); // З прибуттям, Полі.
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+////////////////////////////||MODULE____5||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
